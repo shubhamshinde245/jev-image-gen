@@ -1,5 +1,7 @@
 # jev-image-gen
 
+Generate images by asking TypeSafe Jev (System One) typed questions about a scene description.
+
 ## Backend
 
 ```bash
@@ -8,4 +10,4 @@ uv sync
 uv run uvicorn main:app --reload
 ```
 
-API docs: http://127.0.0.1:8000/docs
+See [backend/README.md](backend/README.md) for API details.
