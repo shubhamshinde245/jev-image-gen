@@ -17,3 +17,6 @@ backend/.venv/
 backend/.env
 backend/.env.local
 backend/.env.*.local
+
+# Job outputs
+backend/outputs/

@@ -43,10 +43,10 @@ curl -OJ http://127.0.0.1:8000/generate/{job_id}/artifacts/final.png
 
 Live (API key required): omit `mock` or set `"mock": false`. Size must be a power of 2, max 128.
 
-## Ticket analyze demo
+## Tests
+
+Live tests call the TypeSafe API. `TYPESAFE_API_KEY` must be set in `.env.local`.
 
 ```bash
-curl -s -X POST http://127.0.0.1:8000/analyze \
-  -H 'Content-Type: application/json' \
-  -d '{"document":"I was charged twice. Please fix this ASAP."}'
+uv run pytest
 ```
